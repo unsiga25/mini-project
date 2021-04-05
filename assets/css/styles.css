@@ -89,6 +89,9 @@ input[type="number"] {
 .mt-5 {
   margin-top: 3rem;
 }
+.mb-3 {
+  margin-bottom: 1rem;
+}
 .pt-4 {
   padding-top: 1.5rem;
 }
@@ -602,6 +605,9 @@ a {
   float: right;
   transition: all 200ms linear;
 }
+#room-2 .room-icons a:hover{
+  color: #6dc234;
+}
 #room-2 .room-icons::after {
   display: block;
   content: "";
@@ -642,8 +648,58 @@ a {
   margin-left: 5px;
   margin-right: 5px;
 }
-#reviews .active{
+#reviews .active {
   background: #6dc234;
+}
+/******VIDEO*****/
+#video {
+  display: flex;
+  background-color: #1b1b1b;
+  z-index: 1;
+  width: 100%;
+  color: #fff;
+  height: 270px;
+  position: relative;
+}
+#video h5 {
+  color: #e1e1e1;
+  font-size: 1.2rem;
+}
+#video a.video-btn {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  font-size: 10px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 0%);
+  transition: all 200ms linear;
+}
+#video a.video-btn::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: "";
+  display: block;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 50%;
+}
+#video a.video-btn:hover {
+  color: #fff;
+  box-shadow: 0px 6px 15px 0px rgb(0 0 0 / 50%);
+  background-color: #6dc234;
+}
+#video i.fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
 }
 /******MEDIA QUERIES*****/
 @media (min-width: 568px) {
