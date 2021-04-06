@@ -20,7 +20,7 @@
       <div class="container">
         <div class="row">
           <div class="nav-col">
-            <img src="assets/images/logo.png" alt="" class="logo" />
+            <img src="assets/images/logo.png" alt="" class="pointer" />
             <nav>
               <ul class="main-nav lg-flex">
                 <li><a href="#">Home</a></li>
@@ -31,7 +31,7 @@
                 <li><a href="#">Contact</a></li>
                 <li><a href="#" class="nav-btn">Book Now</a></li>
               </ul>
-              <div class="hamburger-menu lg-hide">
+              <div class="hamburger-menu pointer lg-hide">
                 <i class="fas fa-bars"></i>
               </div>
             </nav>
@@ -57,20 +57,20 @@
               <input
                 type="date"
                 id="check-in"
-                class="hero-hover text-click"
+                class="hero-hover text-click pointer"
                 name="CheckIn"
                 placeholder="Check-In"
               />
               <input
                 type="date"
                 id="check-out"
-                class="hero-hover text-click"
+                class="hero-hover text-click pointer"
                 name="CheckOut"
                 placeholder="Check-Out"
               />
             </div>
             <div class="person-col col-lg-5 lg-flex">
-              <select name="adult" id="adult" class="hero-hover text-click">
+              <select name="adult" id="adult" class="hero-hover pointer text-click">
                 <option selected disabled="ADULT">ADULT</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -83,7 +83,7 @@
               <select
                 name="children"
                 id="children"
-                class="hero-hover text-click"
+                class="hero-hover text-click pointer"
               >
                 <option selected disabled="CHILDREN">CHILDREN</option>
                 <option value="1">1</option>
@@ -146,7 +146,7 @@
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Nesciunt magni eveniet, in nulla nobis modi.
                 </p>
-                <div class="mt-5">
+                <div class="mt-5 mb-4 mb-xl-0">
                   <a href="#" class="btn-primary">Check Availability</a>
                 </div>
               </div>
@@ -166,7 +166,7 @@
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Nesciunt magni eveniet, in nulla nobis modi.
                 </p>
-                <div class="mt-5">
+                <div class="mt-5 mb-4 mb-xl-0">
                   <a href="#" class="btn-primary">Check Availability</a>
                 </div>
               </div>
@@ -179,36 +179,44 @@
       <div class="container-fluid">
         <div class="row d-flex">
           <div class="col col-sm-6 col-lg-3 px-1em">
+           <div class="image o-hidden">
             <img
-              src="assets/images/restaurant.jpg"
-              alt=""
-              class="img-wrap pointer"
-            />
-            <p class="center-p">Pool</p>
+            src="assets/images/restaurant.jpg"
+            alt=""
+            class="img-wrap pointer"
+          />
+           </div> 
+            <p class="center-p">Spa Salon</p>
           </div>
           <div class="col col-sm-6 col-lg-3 px-1em pt-4 pt-sm-0">
-            <img
+            <div class="image o-hidden">
+              <img
               src="assets/images/restaurant.jpg"
               alt=""
               class="img-wrap pointer"
             />
+             </div> 
+            <p class="center-p">Restaurant</p>
+          </div>
+          <div class="col col-sm-6 col-lg-3 px-1em pt-4 pt-lg-0">
+            <div class="image o-hidden">
+              <img
+              src="assets/images/restaurant.jpg"
+              alt=""
+              class="img-wrap pointer"
+            />
+             </div> 
             <p class="center-p">Pool</p>
           </div>
           <div class="col col-sm-6 col-lg-3 px-1em pt-4 pt-lg-0">
-            <img
+            <div class="image o-hidden">
+              <img
               src="assets/images/restaurant.jpg"
               alt=""
               class="img-wrap pointer"
             />
-            <p class="center-p">Pool</p>
-          </div>
-          <div class="col col-sm-6 col-lg-3 px-1em pt-4 pt-lg-0">
-            <img
-              src="assets/images/restaurant.jpg"
-              alt=""
-              class="img-wrap pointer"
-            />
-            <p class="center-p">Pool</p>
+             </div> 
+            <p class="center-p">Activities</p>
           </div>
         </div>
       </div>
@@ -220,10 +228,10 @@
             class="col col-md-8 mx-auto px-1em align-self-center text-center"
           >
             <p class="header">ELEGANT SUITES</p>
-            <h3>Unpretentious Luxury</h3>
+            <h3 class="h3-padding-bot">Unpretentious Luxury</h3>
           </div>
           <div class="row d-flex text-center">
-            <div class="col-sm-6 col-md-4 px-1em mt-5">
+            <div class="col-sm-6 col-md-4 px-1em">
               <img
                 src="assets/images/king-bed.svg"
                 alt=""
@@ -238,7 +246,7 @@
                 <a href="#" class="btn-primary">Read More</a>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 px-1em mt-5">
+            <div class="col-sm-6 col-md-4 px-1em mt-5 mt-sm-0">
               <img
                 src="assets/images/yacht.svg"
                 alt=""
@@ -253,7 +261,7 @@
                 <a href="#" class="btn-primary">Read More</a>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 px-1em mt-5">
+            <div class="col-sm-6 col-md-4 px-1em mt-5 mt-md-0">
               <img
                 src="assets/images/no-smoking.svg"
                 alt=""
@@ -326,7 +334,7 @@
               name=""
               id="datepicker"
               placeholder="check-in"
-              class="datepicker text-center"
+              class="datepicker text-center pointer"
             />
           </div>
           <div class="col-6 col-md-3 align-self-center">
@@ -335,7 +343,7 @@
               name=""
               id=""
               placeholder="check-out"
-              class="datepicker text-center"
+              class="datepicker text-center pointer"
             />
           </div>
           <div class="col col-md-3 align-self-center">
@@ -348,8 +356,8 @@
               name=""
               id="quantity"
             />
-            <img src="assets/images/up.svg" alt="" class="img-wrap up" />
-            <img src="assets/images/down.svg" alt="" class="img-wrap down" />
+            <img src="assets/images/up.svg" alt="" class="img-wrap up pointer" />
+            <img src="assets/images/down.svg" alt="" class="img-wrap down pointer" />
           </div>
           <div class="col col-md-3 align-self-center">
             <a href="#" id="booking-btn-big" class="text-center"
@@ -366,9 +374,9 @@
             class="col col-md-8 mx-auto px-1em align-self-center text-center"
           >
             <p class="header">LUXURY</p>
-            <h3>Our Rooms</h3>
+            <h3 class="h3-padding-bot">Our Rooms</h3>
           </div>
-          <div class="col col-md-6 mt-4 px-1em">
+          <div class="col col-md-6 px-1em">
             <div class="room-box">
               <img src="assets/images/suite-1.jpg" alt="" class="img-wrap" />
               <p class="tl-p">Suite Tanya</p>
@@ -412,7 +420,7 @@
               </div>
             </div>
           </div>
-          <div class="col col-md-6 mt-4 px-1em">
+          <div class="col col-md-6 mt-4 mt-md-0 px-1em">
             <div class="room-box">
               <img src="assets/images/suite-1.jpg" alt="" class="img-wrap" />
               <p class="tl-p">Suite Tanya</p>
@@ -558,14 +566,211 @@
             </h4>
             <h6>JASON BELT</h6>
             <div class="text-center mt-4">
-              <div class="span active"></div>
-              <div class="span"></div>
-              <div class="span"></div>
+              <div class="span active pointer"></div>
+              <div class="span pointer"></div>
+              <div class="span pointer"></div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="video"></section>
+    <section id="video">
+      <div class="container my-auto">
+        <div class="row d-flex justify-center">
+          <div class="col text-center mx-auto">
+            <h5>A New Dimension Of Luxury.</h5>
+            <p class="mt-3 mb-3">our presentation, 0:48 min</p>
+            <a href="#" class="video-btn"> <i class="fa fa-play"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="dining">
+      <div class="container padding-top-bottom">
+        <div class="row d-flex justify-center">
+          <div
+            class="col col-md-8 mx-auto px-1em align-self-center text-center"
+          >
+            <p class="header">EXCELLENT RESTAURANT</p>
+            <h3 class="h3-padding-bot">Dining & Bars</h3>
+          </div>
+          <div class="col bg-white d-flex">
+            <div class="col col-xl-6 mt-xl-0 mt-4 order-xl-1">
+              <img src="assets/images/beach-res.jpg" alt="" class="img-wrap" />
+            </div>
+            <div
+              class="col col-xl-6 text-center align-self-center mt-4 order-xl-2 bg-white"
+            >
+              <div class="row d-flex justify-center">
+                <div class="col-sm-10 col-xl-8 text-center">
+                  <h5>Beach Restaurant</h5>
+                  <p class="mt-4 px-1em">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nesciunt magni eveniet, in nulla nobis modi.
+                  </p>
+                  <div class="mt-5 mb-4 mb-xl-0">
+                    <a href="#" class="btn-primary">Explore</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-xl-6 mt-xl-0 mt-4 order-xl-4">
+              <img src="assets/images/pool-res.jpg" alt="" class="img-wrap" />
+            </div>
+            <div
+              class="col col-xl-6 text-center align-self-center mt-4 order-xl-3 bg-white"
+            >
+              <div class="row d-flex justify-center">
+                <div class="col-sm-10 col-xl-8 text-center">
+                  <h5>Pool Restaurant</h5>
+                  <p class="mt-4 px-1em">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nesciunt magni eveniet, in nulla nobis modi.
+                  </p>
+                  <div class="mt-5 mb-4 mb-xl-0">
+                    <a href="#" class="btn-primary">Explore</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container padding-top">
+        <div class="row d-flex justify-center">
+          <div
+            class="col col-md-8 mx-auto px-1em align-self-center text-center"
+          >
+            <p class="header">GET IN TOUCH</p>
+            <h3 class="h3-padding-bot">Drop us a line</h3>
+          </div>
+        </div>
+        <div class="row d-flex justify-center">
+          <div class="col col-md-6 col-lg-4 px-1em">
+            <div class="line-cell d-flex">
+              <p class="text-left p-title">Address:</p>
+              <p class="text-right">Avenue Str. 328</p>
+            </div>
+            <div class="line-cell d-flex">
+              <p class="text-left p-title">City:</p>
+              <p class="text-right">Thessaloniki</p>
+            </div>
+            <div class="line-cell d-flex">
+              <p class="text-left p-title">Check-In:</p>
+              <p class="text-right">14:00 pm</p>
+            </div>
+          </div>
+          <div class="col col-md-6 col-lg-4 px-1em">
+            <div class="line-cell d-flex">
+              <p class="text-left p-title">Phone:</p>
+              <p class="text-right">+21 60 374 7537</p>
+            </div>
+            <div class="line-cell d-flex">
+              <p class="text-left p-title">Email:</p>
+              <p class="text-right">info@hotel.com</p>
+            </div>
+            <div class="line-cell d-flex">
+              <p class="text-left p-title">Check-Out:</p>
+              <p class="text-right">11:00 am</p>
+            </div>
+          </div>
+          <div
+            class="col col-md-8 mx-auto mt-5 px-1em align-self-center text-center"
+          >
+            <p class="mb-0">available at: 8am - 10pm</p>
+            <h3 class="h2">+21 60 374 7537</h3>
+          </div>
+        </div>
+        <div class="row d-flex justify-center py-0">
+          <div class="col col-md-8 mt-4 subscribe">
+            <input type="text" name="" placeholder="your text here" id="" />
+            <button class="pointer">subscribe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="caro-rooms">
+      <div class="container-fluid">
+        <div class="row d-flex justify-center py-0">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-black d-block">
+            <div class="overlay">
+              <img src="assets/images/car-room-1.jpg" alt="" class="img-wrap" />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-black d-block">
+            <div class="overlay">
+              <img src="assets/images/car-room-1.jpg" alt="" class="img-wrap" />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-black sm-block">
+            <div class="overlay">
+              <img src="assets/images/car-room-1.jpg" alt="" class="img-wrap" />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-black md-block">
+            <div class="overlay">
+              <img src="assets/images/car-room-1.jpg" alt="" class="img-wrap" />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-black lg-block">
+            <div class="overlay">
+              <img src="assets/images/car-room-1.jpg" alt="" class="img-wrap" />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-black lg-block">
+            <div class="overlay">
+              <img src="assets/images/car-room-1.jpg" alt="" class="img-wrap" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="site-map">
+      <div class="container padding-top-bottom">
+        <div class="row d-flex justify-center">
+          <div class="col col-md-3 text-center text-md-left">
+            <img src="assets/images/logo.png" alt="" class="logo" />
+            <p class="mt-4">
+              Avenue Street 3284<br />
+              Thessaloniki
+            </p>
+          </div>
+          <div class="col col-md-4 text-center text-md-left">
+            <h6 class="mb-3">INFORMATION</h6>
+            <a href="#">terms and conditions</a>
+            <a href="#">services</a>
+            <a href="#">restaurant</a>
+            <a href="#">testimonials</a>
+            <a href="#">gallery & images</a>
+          </div>
+          <div class="col col-md-5 text-center text-md-left">
+            <h6 class="mb-3">ABOUT US</h6>
+            <p class="mb-4">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae
+              iusto ex qui aut nam nobis vel. Recusandae unde deserunt error.
+            </p>
+            <img class="sample-logo" src="assets/images/sample-web-1.png" alt="">
+            <img class="sample-logo" src="assets/images/sample-web-2.png" alt="">
+            <img class="sample-logo" src="assets/images/sample-web-3.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row d-flex items-center text-center">
+          <div class="col col-md-6 text-md-left">
+            <p class="mb-0">2019 © Thalia. All rights reserved.</p>
+          </div>
+          <div class="col col-md-6 text-md-right">
+            <a href="#">facebook</a>
+            <a href="#">twitter</a>
+            <a href="#">instagram</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
