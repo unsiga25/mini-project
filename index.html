@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/24b145f74c.js"
       crossorigin="anonymous"
@@ -70,7 +67,11 @@
               />
             </div>
             <div class="person-col col-lg-5 lg-flex">
-              <select name="adult" id="adult" class="hero-hover pointer text-click">
+              <select
+                name="adult"
+                id="adult"
+                class="hero-hover pointer text-click"
+              >
                 <option selected disabled="ADULT">ADULT</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -132,7 +133,7 @@
     <section id="room-1">
       <div class="container-fluid">
         <div class="row d-flex py-0 mb-lg-4 mb-xl-0">
-          <div class="col col-xl-6 mt-xl-0 mt-4 order-xl-1">
+          <div class="col col-xl-6 mt-xl-0 mt-4 order-xl-1" data-aos="fade-right">
             <img src="assets/images/room1.jpg" alt="" class="img-wrap" />
             <p class="vertical-p">Private Pool Suite</p>
           </div>
@@ -142,7 +143,7 @@
             <div class="row d-flex justify-center">
               <div class="col-sm-10 col-xl-8 text-center">
                 <h3>Private Pool Suite</h3>
-                <p class="mt-4 px-1em">
+                <p class="mt-4 px-1em header-des">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Nesciunt magni eveniet, in nulla nobis modi.
                 </p>
@@ -152,7 +153,7 @@
               </div>
             </div>
           </div>
-          <div class="col col-xl-6 mt-xl-0 mt-4 order-xl-4">
+          <div class="col col-xl-6 mt-xl-0 mt-4 order-xl-4" data-aos="fade-left">
             <img src="assets/images/room2.jpg" alt="" class="img-wrap" />
             <p class="vertical-p">Sea View Suite</p>
           </div>
@@ -162,7 +163,7 @@
             <div class="row d-flex justify-center">
               <div class="col-sm-10 col-xl-8 text-center">
                 <h3>Sea View Suite</h3>
-                <p class="mt-4 px-1em">
+                <p class="mt-4 px-1em header-des">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Nesciunt magni eveniet, in nulla nobis modi.
                 </p>
@@ -179,43 +180,43 @@
       <div class="container-fluid">
         <div class="row d-flex">
           <div class="col col-sm-6 col-lg-3 px-1em">
-           <div class="image o-hidden">
-            <img
-            src="assets/images/restaurant.jpg"
-            alt=""
-            class="img-wrap pointer"
-          />
-           </div> 
+            <div class="image o-hidden">
+              <img
+                src="assets/images/spa.jpg"
+                alt=""
+                class="img-wrap pointer"
+              />
+            </div>
             <p class="center-p">Spa Salon</p>
           </div>
           <div class="col col-sm-6 col-lg-3 px-1em pt-4 pt-sm-0">
             <div class="image o-hidden">
               <img
-              src="assets/images/restaurant.jpg"
-              alt=""
-              class="img-wrap pointer"
-            />
-             </div> 
+                src="assets/images/restaurant.jpg"
+                alt=""
+                class="img-wrap pointer"
+              />
+            </div>
             <p class="center-p">Restaurant</p>
           </div>
           <div class="col col-sm-6 col-lg-3 px-1em pt-4 pt-lg-0">
             <div class="image o-hidden">
               <img
-              src="assets/images/restaurant.jpg"
-              alt=""
-              class="img-wrap pointer"
-            />
-             </div> 
+                src="assets/images/pool.jpg"
+                alt=""
+                class="img-wrap pointer"
+              />
+            </div>
             <p class="center-p">Pool</p>
           </div>
           <div class="col col-sm-6 col-lg-3 px-1em pt-4 pt-lg-0">
             <div class="image o-hidden">
               <img
-              src="assets/images/restaurant.jpg"
-              alt=""
-              class="img-wrap pointer"
-            />
-             </div> 
+                src="assets/images/activities.jpg"
+                alt=""
+                class="img-wrap pointer"
+              />
+            </div>
             <p class="center-p">Activities</p>
           </div>
         </div>
@@ -356,8 +357,16 @@
               name=""
               id="quantity"
             />
-            <img src="assets/images/up.svg" alt="" class="img-wrap up pointer" />
-            <img src="assets/images/down.svg" alt="" class="img-wrap down pointer" />
+            <img
+              src="assets/images/up.svg"
+              alt=""
+              class="img-wrap up pointer"
+            />
+            <img
+              src="assets/images/down.svg"
+              alt=""
+              class="img-wrap down pointer"
+            />
           </div>
           <div class="col col-md-3 align-self-center">
             <a href="#" id="booking-btn-big" class="text-center"
@@ -389,7 +398,7 @@
               </div>
               <div class="room-box-in">
                 <h5 class="mt-1">Pool Suite</h5>
-                <p class="mt-3">
+                <p class="mt-3 header-des">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Fugiat fuga dignissimos tempora id neque autem!
                 </p>
@@ -401,17 +410,17 @@
                     class="img-wrap icon-box"
                   />
                   <img
-                    src="assets/images/swim-pool.svg"
+                    src="assets/images/king-bed.svg"
                     alt=""
                     class="img-wrap icon-box"
                   />
                   <img
-                    src="assets/images/swim-pool.svg"
+                    src="assets/images/food.svg"
                     alt=""
                     class="img-wrap icon-box"
                   />
                   <img
-                    src="assets/images/swim-pool.svg"
+                    src="assets/images/yacht.svg"
                     alt=""
                     class="img-wrap icon-box"
                   />
@@ -422,8 +431,8 @@
           </div>
           <div class="col col-md-6 mt-4 mt-md-0 px-1em">
             <div class="room-box">
-              <img src="assets/images/suite-1.jpg" alt="" class="img-wrap" />
-              <p class="tl-p">Suite Tanya</p>
+              <img src="assets/images/suite-2.jpg" alt="" class="img-wrap" />
+              <p class="tl-p">Suite Helen</p>
               <div class="stars-p">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -432,8 +441,8 @@
                 <i class="fa fa-star-half-alt"></i>
               </div>
               <div class="room-box-in">
-                <h5 class="mt-1">Pool Suite</h5>
-                <p class="mt-3">
+                <h5 class="mt-1">Small Room</h5>
+                <p class="mt-3 header-des">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Fugiat fuga dignissimos tempora id neque autem!
                 </p>
@@ -445,17 +454,17 @@
                     class="img-wrap icon-box"
                   />
                   <img
-                    src="assets/images/swim-pool.svg"
+                    src="assets/images/drink.svg"
                     alt=""
                     class="img-wrap icon-box"
                   />
                   <img
-                    src="assets/images/swim-pool.svg"
+                    src="assets/images/yacht.svg"
                     alt=""
                     class="img-wrap icon-box"
                   />
                   <img
-                    src="assets/images/swim-pool.svg"
+                    src="assets/images/no-smoking.svg"
                     alt=""
                     class="img-wrap icon-box"
                   />
@@ -466,8 +475,8 @@
           </div>
           <div class="col col-md-6 mt-4 px-1em">
             <div class="room-box">
-              <img src="assets/images/suite-1.jpg" alt="" class="img-wrap" />
-              <p class="tl-p">Suite Tanya</p>
+              <img src="assets/images/suite-3.jpg" alt="" class="img-wrap" />
+              <p class="tl-p">Suite Andrea</p>
               <div class="stars-p">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -476,7 +485,7 @@
                 <i class="fa fa-star-half-alt"></i>
               </div>
               <div class="room-box-in">
-                <h5 class="mt-1">Pool Suite</h5>
+                <h5 class="mt-1 header-des">Apartment</h5>
                 <p class="mt-3">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Fugiat fuga dignissimos tempora id neque autem!
@@ -489,17 +498,17 @@
                     class="img-wrap icon-box"
                   />
                   <img
-                    src="assets/images/swim-pool.svg"
+                    src="assets/images/yacht.svg"
                     alt=""
                     class="img-wrap icon-box"
                   />
                   <img
-                    src="assets/images/swim-pool.svg"
+                    src="assets/images/no-smoking.svg"
                     alt=""
                     class="img-wrap icon-box"
                   />
                   <img
-                    src="assets/images/swim-pool.svg"
+                    src="assets/images/drink.svg"
                     alt=""
                     class="img-wrap icon-box"
                   />
@@ -510,8 +519,8 @@
           </div>
           <div class="col col-md-6 mt-4 px-1em">
             <div class="room-box">
-              <img src="assets/images/suite-1.jpg" alt="" class="img-wrap" />
-              <p class="tl-p">Suite Tanya</p>
+              <img src="assets/images/suite-4.jpg" alt="" class="img-wrap" />
+              <p class="tl-p">Suite Diana</p>
               <div class="stars-p">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -520,8 +529,8 @@
                 <i class="fa fa-star-half-alt"></i>
               </div>
               <div class="room-box-in">
-                <h5 class="mt-1">Pool Suite</h5>
-                <p class="mt-3">
+                <h5 class="mt-1">Big Room</h5>
+                <p class="mt-3 header-des">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Fugiat fuga dignissimos tempora id neque autem!
                 </p>
@@ -533,17 +542,17 @@
                     class="img-wrap icon-box"
                   />
                   <img
-                    src="assets/images/swim-pool.svg"
+                    src="assets/images/yacht.svg"
                     alt=""
                     class="img-wrap icon-box"
                   />
                   <img
-                    src="assets/images/swim-pool.svg"
+                    src="assets/images/no-smoking.svg"
                     alt=""
                     class="img-wrap icon-box"
                   />
                   <img
-                    src="assets/images/swim-pool.svg"
+                    src="assets/images/drink.svg"
                     alt=""
                     class="img-wrap icon-box"
                   />
@@ -595,7 +604,8 @@
             <h3 class="h3-padding-bot">Dining & Bars</h3>
           </div>
           <div class="col bg-white d-flex">
-            <div class="col col-xl-6 mt-xl-0 mt-4 order-xl-1">
+            <div class="col col-xl-6 mt-xl-0 mt-4 order-xl-1"
+            data-aos="fade-right">
               <img src="assets/images/beach-res.jpg" alt="" class="img-wrap" />
             </div>
             <div
@@ -604,7 +614,7 @@
               <div class="row d-flex justify-center">
                 <div class="col-sm-10 col-xl-8 text-center">
                   <h5>Beach Restaurant</h5>
-                  <p class="mt-4 px-1em">
+                  <p class="mt-4 px-1em header-des">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Nesciunt magni eveniet, in nulla nobis modi.
                   </p>
@@ -614,7 +624,8 @@
                 </div>
               </div>
             </div>
-            <div class="col col-xl-6 mt-xl-0 mt-4 order-xl-4">
+            <div class="col col-xl-6 mt-xl-0 mt-4 order-xl-4"
+            data-aos="fade-left">
               <img src="assets/images/pool-res.jpg" alt="" class="img-wrap" />
             </div>
             <div
@@ -623,7 +634,7 @@
               <div class="row d-flex justify-center">
                 <div class="col-sm-10 col-xl-8 text-center">
                   <h5>Pool Restaurant</h5>
-                  <p class="mt-4 px-1em">
+                  <p class="mt-4 px-1em header-des">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Nesciunt magni eveniet, in nulla nobis modi.
                   </p>
@@ -651,36 +662,36 @@
           <div class="col col-md-6 col-lg-4 px-1em">
             <div class="line-cell d-flex">
               <p class="text-left p-title">Address:</p>
-              <p class="text-right">Avenue Str. 328</p>
+              <p class="text-right header-des">Avenue Str. 328</p>
             </div>
             <div class="line-cell d-flex">
               <p class="text-left p-title">City:</p>
-              <p class="text-right">Thessaloniki</p>
+              <p class="text-right header-des">Thessaloniki</p>
             </div>
             <div class="line-cell d-flex">
               <p class="text-left p-title">Check-In:</p>
-              <p class="text-right">14:00 pm</p>
+              <p class="text-right header-des">14:00 pm</p>
             </div>
           </div>
           <div class="col col-md-6 col-lg-4 px-1em">
             <div class="line-cell d-flex">
               <p class="text-left p-title">Phone:</p>
-              <p class="text-right">+21 60 374 7537</p>
+              <p class="text-right header-des">+21 60 374 7537</p>
             </div>
             <div class="line-cell d-flex">
               <p class="text-left p-title">Email:</p>
-              <p class="text-right">info@hotel.com</p>
+              <p class="text-right header-des">info@hotel.com</p>
             </div>
             <div class="line-cell d-flex">
               <p class="text-left p-title">Check-Out:</p>
-              <p class="text-right">11:00 am</p>
+              <p class="text-right header-des">11:00 am</p>
             </div>
           </div>
           <div
             class="col col-md-8 mx-auto mt-5 px-1em align-self-center text-center"
           >
-            <p class="mb-0">available at: 8am - 10pm</p>
-            <h3 class="h2">+21 60 374 7537</h3>
+            <p class="mb-0 header-des">available at: 8am - 10pm</p>
+            <h3 class="h2 header-des">+21 60 374 7537</h3>
           </div>
         </div>
         <div class="row d-flex justify-center py-0">
@@ -701,27 +712,27 @@
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-black d-block">
             <div class="overlay">
-              <img src="assets/images/car-room-1.jpg" alt="" class="img-wrap" />
+              <img src="assets/images/car-room-2.jpg" alt="" class="img-wrap" />
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-black sm-block">
             <div class="overlay">
-              <img src="assets/images/car-room-1.jpg" alt="" class="img-wrap" />
+              <img src="assets/images/car-room-3.jpg" alt="" class="img-wrap" />
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-black md-block">
             <div class="overlay">
-              <img src="assets/images/car-room-1.jpg" alt="" class="img-wrap" />
+              <img src="assets/images/car-room-4.jpg" alt="" class="img-wrap" />
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-black lg-block">
             <div class="overlay">
-              <img src="assets/images/car-room-1.jpg" alt="" class="img-wrap" />
+              <img src="assets/images/car-room-5.jpg" alt="" class="img-wrap" />
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-black lg-block">
             <div class="overlay">
-              <img src="assets/images/car-room-1.jpg" alt="" class="img-wrap" />
+              <img src="assets/images/car-room-6.jpg" alt="" class="img-wrap" />
             </div>
           </div>
         </div>
@@ -737,7 +748,7 @@
               Thessaloniki
             </p>
           </div>
-          <div class="col col-md-4 text-center text-md-left">
+          <div class="col col-md-4 mt-4 mt-md-0 text-center text-md-left">
             <h6 class="mb-3">INFORMATION</h6>
             <a href="#">terms and conditions</a>
             <a href="#">services</a>
@@ -745,15 +756,27 @@
             <a href="#">testimonials</a>
             <a href="#">gallery & images</a>
           </div>
-          <div class="col col-md-5 text-center text-md-left">
+          <div class="col col-md-5 mt-4 mt-md-0 text-center text-md-left">
             <h6 class="mb-3">ABOUT US</h6>
             <p class="mb-4">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae
               iusto ex qui aut nam nobis vel. Recusandae unde deserunt error.
             </p>
-            <img class="sample-logo" src="assets/images/sample-web-1.png" alt="">
-            <img class="sample-logo" src="assets/images/sample-web-2.png" alt="">
-            <img class="sample-logo" src="assets/images/sample-web-3.png" alt="">
+            <img
+              class="sample-logo"
+              src="assets/images/sample-web-1.png"
+              alt=""
+            />
+            <img
+              class="sample-logo"
+              src="assets/images/sample-web-2.png"
+              alt=""
+            />
+            <img
+              class="sample-logo"
+              src="assets/images/sample-web-3.png"
+              alt=""
+            />
           </div>
         </div>
       </div>
@@ -764,7 +787,7 @@
           <div class="col col-md-6 text-md-left">
             <p class="mb-0">2019 © Thalia. All rights reserved.</p>
           </div>
-          <div class="col col-md-6 text-md-right">
+          <div class="col col-md-6 my-2 my-md-0 text-md-right">
             <a href="#">facebook</a>
             <a href="#">twitter</a>
             <a href="#">instagram</a>
@@ -772,5 +795,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>
