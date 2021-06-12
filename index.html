@@ -1,802 +1,548 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script
-      src="https://kit.fontawesome.com/24b145f74c.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Mini Project 1</title>
-  </head>
-  <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/24b145f74c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Food</title>
+</head>
+
+<body>
     <header id="navbar">
-      <div class="container">
-        <div class="row">
-          <div class="nav-col">
-            <img src="assets/images/logo.png" alt="" class="pointer" />
-            <nav>
-              <ul class="main-nav lg-flex">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Room</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#" class="nav-btn">Book Now</a></li>
-              </ul>
-              <div class="hamburger-menu pointer lg-hide">
-                <i class="fas fa-bars"></i>
-              </div>
-            </nav>
-          </div>
+        <div class="nav-container d-flex">
+            <div class="nav-left d-flex">
+                <h2 class="title-logo">FOODUGAN</h2>
+                <ul class="nav-menu d-hidden">
+                    <li><a href="#about-us">About</a></li>
+                    <li><a href="#favorite">Menu</a></li>
+                    <li><a href="#articles">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <a href="" class="btn btn-outline d-hidden">CONTACT US</a>
+            <i class="fas fa-bars" aria-hidden="true"></i>
         </div>
-      </div>
     </header>
     <section id="hero">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8 col-lg-10 mx-auto">
-            <h1>Discover your paradise under the Greek sky</h1>
-          </div>
-          <div class="star-col col mx-auto text-center">
-            <i class="fa fa-star-o hero-stars"></i>
-            <i class="fa fa-star-o hero-stars"></i>
-            <i class="fa fa-star-o hero-stars"></i>
-            <i class="fa fa-star-o hero-stars"></i>
-            <i class="fa fa-star-o hero-stars"></i>
-          </div>
-          <div class="booking row">
-            <div class="date-col col-lg-5 lg-flex">
-              <input
-                type="date"
-                id="check-in"
-                class="hero-hover text-click pointer"
-                name="CheckIn"
-                placeholder="Check-In"
-              />
-              <input
-                type="date"
-                id="check-out"
-                class="hero-hover text-click pointer"
-                name="CheckOut"
-                placeholder="Check-Out"
-              />
-            </div>
-            <div class="person-col col-lg-5 lg-flex">
-              <select
-                name="adult"
-                id="adult"
-                class="hero-hover pointer text-click"
-              >
-                <option selected disabled="ADULT">ADULT</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-              </select>
-              <select
-                name="children"
-                id="children"
-                class="hero-hover text-click pointer"
-              >
-                <option selected disabled="CHILDREN">CHILDREN</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-              </select>
-            </div>
-            <div class="book-col col-lg-2 text-center">
-              <a href="#" class="booking-btn">Book Now</a>
-            </div>
-          </div>
-          <div class="revealer-col mx-auto text-center">
-            <button class="nav-btn">
-              <span>+</span>
-            </button>
-            <h2>discover your paradise</h2>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="intro">
-      <div class="container padding-top-bottom">
-        <div class="row d-flex">
-          <div class="col col-md-6 text-center px-1em align-self-center">
-            <p class="header">HOTEL THALIA</p>
-            <h2>Here is a tribute to good life!</h2>
-            <p class="header-des mt-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-              iste ut omnis quod facere obcaecati impedit voluptas sit ullam?
-              Autem et ad esse expedita beatae nostrum facere labore magnam
-              exercitationem.
-            </p>
-          </div>
-          <div
-            class="col col-md-6 text-center px-1em align-self-center mt-4 mt-md-0"
-          >
-            <img src="assets/images/rooms-header.png" alt="" class="img-wrap" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="room-1">
-      <div class="container-fluid">
-        <div class="row d-flex py-0 mb-lg-4 mb-xl-0">
-          <div class="col col-xl-6 mt-xl-0 mt-4 order-xl-1" data-aos="fade-right">
-            <img src="assets/images/room1.jpg" alt="" class="img-wrap" />
-            <p class="vertical-p">Private Pool Suite</p>
-          </div>
-          <div
-            class="col col-xl-6 text-center align-self-center mt-4 order-xl-2"
-          >
-            <div class="row d-flex justify-center">
-              <div class="col-sm-10 col-xl-8 text-center">
-                <h3>Private Pool Suite</h3>
-                <p class="mt-4 px-1em header-des">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Nesciunt magni eveniet, in nulla nobis modi.
-                </p>
-                <div class="mt-5 mb-4 mb-xl-0">
-                  <a href="#" class="btn-primary">Check Availability</a>
+        <div class="container">
+            <div class="row space-between">
+                <div class="col col-12 col-md-6 order-md-2">
+                    <div class="div-img">
+                        <img src="assets/img/hero-img.png" alt="" class="img">
+                        <i class="fas fa-play fa-2x"></i>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col col-xl-6 mt-xl-0 mt-4 order-xl-4" data-aos="fade-left">
-            <img src="assets/images/room2.jpg" alt="" class="img-wrap" />
-            <p class="vertical-p">Sea View Suite</p>
-          </div>
-          <div
-            class="col col-xl-6 text-center align-self-center mt-4 order-xl-3"
-          >
-            <div class="row d-flex justify-center">
-              <div class="col-sm-10 col-xl-8 text-center">
-                <h3>Sea View Suite</h3>
-                <p class="mt-4 px-1em header-des">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Nesciunt magni eveniet, in nulla nobis modi.
-                </p>
-                <div class="mt-5 mb-4 mb-xl-0">
-                  <a href="#" class="btn-primary">Check Availability</a>
+                <div class="col col-12 col-md-6 d-flex justify-center col-wrap order-md-1 pl-md-30">
+                    <h5 class="heading-5 mb-26">Food Market</h5>
+                    <h1 class="heading-1">Welcome to
+                        Foodugan!</h1>
+                    <p>Prices to beat against the market stocks.</p>
+                    <a href="#" class="btn btn-primary">SEE MENU</a>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
-    <section id="showcase">
-      <div class="container-fluid">
-        <div class="row d-flex">
-          <div class="col col-sm-6 col-lg-3 px-1em">
-            <div class="image o-hidden">
-              <img
-                src="assets/images/spa.jpg"
-                alt=""
-                class="img-wrap pointer"
-              />
-            </div>
-            <p class="center-p">Spa Salon</p>
-          </div>
-          <div class="col col-sm-6 col-lg-3 px-1em pt-4 pt-sm-0">
-            <div class="image o-hidden">
-              <img
-                src="assets/images/restaurant.jpg"
-                alt=""
-                class="img-wrap pointer"
-              />
-            </div>
-            <p class="center-p">Restaurant</p>
-          </div>
-          <div class="col col-sm-6 col-lg-3 px-1em pt-4 pt-lg-0">
-            <div class="image o-hidden">
-              <img
-                src="assets/images/pool.jpg"
-                alt=""
-                class="img-wrap pointer"
-              />
-            </div>
-            <p class="center-p">Pool</p>
-          </div>
-          <div class="col col-sm-6 col-lg-3 px-1em pt-4 pt-lg-0">
-            <div class="image o-hidden">
-              <img
-                src="assets/images/activities.jpg"
-                alt=""
-                class="img-wrap pointer"
-              />
-            </div>
-            <p class="center-p">Activities</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="suites">
-      <div class="container padding-top-bottom">
-        <div class="row d-flex justify-center">
-          <div
-            class="col col-md-8 mx-auto px-1em align-self-center text-center"
-          >
-            <p class="header">ELEGANT SUITES</p>
-            <h3 class="h3-padding-bot">Unpretentious Luxury</h3>
-          </div>
-          <div class="row d-flex text-center">
-            <div class="col-sm-6 col-md-4 px-1em">
-              <img
-                src="assets/images/king-bed.svg"
-                alt=""
-                class="img-wrap service-box"
-              />
-              <h5 class="mt-2">King Beds</h5>
-              <p class="header-des mt-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                nulla itaque mollitia omnis, a velit.
-              </p>
-              <div class="mt-1">
-                <a href="#" class="btn-primary">Read More</a>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 px-1em mt-5 mt-sm-0">
-              <img
-                src="assets/images/yacht.svg"
-                alt=""
-                class="img-wrap service-box"
-              />
-              <h5 class="mt-2">Yacht Rental</h5>
-              <p class="header-des mt-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                nulla itaque mollitia omnis, a velit.
-              </p>
-              <div class="mt-1">
-                <a href="#" class="btn-primary">Read More</a>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 px-1em mt-5 mt-md-0">
-              <img
-                src="assets/images/no-smoking.svg"
-                alt=""
-                class="img-wrap service-box"
-              />
-              <h5 class="mt-2">Smoking Free</h5>
-              <p class="header-des mt-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                nulla itaque mollitia omnis, a velit.
-              </p>
-              <div class="mt-1">
-                <a href="#" class="btn-primary">Read More</a>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 px-1em mt-5">
-              <img
-                src="assets/images/drink.svg"
-                alt=""
-                class="img-wrap service-box"
-              />
-              <h5 class="mt-2">Welcome Drink</h5>
-              <p class="header-des mt-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                nulla itaque mollitia omnis, a velit.
-              </p>
-              <div class="mt-1">
-                <a href="#" class="btn-primary">Read More</a>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 px-1em mt-5">
-              <img
-                src="assets/images/swim-pool.svg"
-                alt=""
-                class="img-wrap service-box"
-              />
-              <h5 class="mt-2">Swimming Pool</h5>
-              <p class="header-des mt-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                nulla itaque mollitia omnis, a velit.
-              </p>
-              <div class="mt-1">
-                <a href="#" class="btn-primary">Read More</a>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 px-1em mt-5">
-              <img
-                src="assets/images/food.svg"
-                alt=""
-                class="img-wrap service-box"
-              />
-              <h5 class="mt-2">Food Included</h5>
-              <p class="header-des mt-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                nulla itaque mollitia omnis, a velit.
-              </p>
-              <div class="mt-1">
-                <a href="#" class="btn-primary">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="room-check-in">
-      <div class="container my-auto">
-        <div class="row d-flex justify-center">
-          <div class="col-6 col-md-3 align-self-center">
-            <input
-              type="text"
-              name="check-in"
-              placeholder="check-in"
-              class="datepicker text-center pointer"
-            />
-          </div>
-          <div class="col-6 col-md-3 align-self-center">
-            <input
-              type="text"
-              name="check-out"
-              placeholder="check-out"
-              class="datepicker text-center pointer"
-            />
-          </div>
-          <div class="col col-md-3 align-self-center">
-            <input
-              type="number"
-              min="1"
-              max="9999"
-              value="1"
-              step="1"
-              name="quantity"
-              id="quantity"
-            />
-            <img
-              src="assets/images/up.svg"
-              alt=""
-              class="img-wrap up pointer"
-            />
-            <img
-              src="assets/images/down.svg"
-              alt=""
-              class="img-wrap down pointer"
-            />
-          </div>
-          <div class="col col-md-3 align-self-center">
-            <a href="#" id="booking-btn-big" class="text-center"
-              >Check Availability</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="room-2">
-      <div class="container padding-top-bottom">
-        <div class="row d-flex justify-center">
-          <div
-            class="col col-md-8 mx-auto px-1em align-self-center text-center"
-          >
-            <p class="header">LUXURY</p>
-            <h3 class="h3-padding-bot">Our Rooms</h3>
-          </div>
-          <div class="col col-md-6 px-1em">
-            <div class="room-box">
-              <img src="assets/images/suite-1.jpg" alt="" class="img-wrap" />
-              <p class="tl-p">Suite Tanya</p>
-              <div class="stars-p">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-alt"></i>
-              </div>
-              <div class="room-box-in">
-                <h5 class="mt-1">Pool Suite</h5>
-                <p class="mt-3 header-des">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Fugiat fuga dignissimos tempora id neque autem!
-                </p>
-                <a href="#" class="btn-primary">Book for $130</a>
-                <div class="room-icons pt-4 mt-4">
-                  <img
-                    src="assets/images/swim-pool.svg"
-                    alt=""
-                    class="img-wrap icon-box"
-                  />
-                  <img
-                    src="assets/images/king-bed.svg"
-                    alt=""
-                    class="img-wrap icon-box"
-                  />
-                  <img
-                    src="assets/images/food.svg"
-                    alt=""
-                    class="img-wrap icon-box"
-                  />
-                  <img
-                    src="assets/images/yacht.svg"
-                    alt=""
-                    class="img-wrap icon-box"
-                  />
-                  <a href="#">FULL INFO</a>
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col col-12 d-flex d-center col-wrap">
+                    <h5 class="heading-5 mb-26">Best Food</h5>
+                    <h2 class="heading-2">Features</h2>
+                    <p class="text-center">More than accessible and guranteed world-class level.</p>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="col col-md-6 mt-4 mt-md-0 px-1em">
-            <div class="room-box">
-              <img src="assets/images/suite-2.jpg" alt="" class="img-wrap" />
-              <p class="tl-p">Suite Helen</p>
-              <div class="stars-p">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-alt"></i>
-              </div>
-              <div class="room-box-in">
-                <h5 class="mt-1">Small Room</h5>
-                <p class="mt-3 header-des">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Fugiat fuga dignissimos tempora id neque autem!
-                </p>
-                <a href="#" class="btn-primary">Book for $130</a>
-                <div class="room-icons pt-4 mt-4">
-                  <img
-                    src="assets/images/swim-pool.svg"
-                    alt=""
-                    class="img-wrap icon-box"
-                  />
-                  <img
-                    src="assets/images/drink.svg"
-                    alt=""
-                    class="img-wrap icon-box"
-                  />
-                  <img
-                    src="assets/images/yacht.svg"
-                    alt=""
-                    class="img-wrap icon-box"
-                  />
-                  <img
-                    src="assets/images/no-smoking.svg"
-                    alt=""
-                    class="img-wrap icon-box"
-                  />
-                  <a href="#">FULL INFO</a>
+            <div class="row justify-center">
+                <div class="col col-md-9">
+                    <div class="row">
+                        <div class="col col-md-4">
+                            <div class="feature-col d-flex align-center col-wrap aos-init aos-animate"
+                                data-aos="fade-up">
+                                <img src="assets/img/feature-1.png" alt="" class="feature-img">
+                                <h4 class="heading-4">Fresh Food</h4>
+                                <div class="feature-div d-flex align-center col-wrap">
+                                    <p class="text-center feature-p">
+                                        Harvest and delivered fresh it still smells like nature.
+                                    </p>
+                                    <a href="#" class="link feature-link">Explore</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-4">
+                            <div class="feature-col d-flex align-center col-wrap aos-init aos-animate"
+                                data-aos="fade-down">
+                                <img src="assets/img/feature-2.png" alt="" class="feature-img">
+                                <h4 class="heading-4">Delivery</h4>
+                                <div class="feature-div d-flex align-center col-wrap">
+                                    <p class="text-center feature-p">
+                                        Guranteed on-time delivery, or it's free!
+                                    </p>
+                                    <a href="#" class="link feature-link">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-4">
+                            <div class="feature-col d-flex align-center col-wrap aos-init aos-animate"
+                                data-aos="fade-up">
+                                <img src="assets/img/feature-3.png" alt="" class="feature-img">
+                                <h4 class="heading-4">Restaurant</h4>
+                                <div class="feature-div d-flex align-center col-wrap">
+                                    <p class="text-center feature-p">
+                                        Rated 5/5 by the best world-class critics, our goal is to reach 5-star michelin.
+                                    </p>
+                                    <a href="#" class="link feature-link">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="col col-md-6 mt-4 px-1em">
-            <div class="room-box">
-              <img src="assets/images/suite-3.jpg" alt="" class="img-wrap" />
-              <p class="tl-p">Suite Andrea</p>
-              <div class="stars-p">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-alt"></i>
-              </div>
-              <div class="room-box-in">
-                <h5 class="mt-1 header-des">Apartment</h5>
-                <p class="mt-3">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Fugiat fuga dignissimos tempora id neque autem!
-                </p>
-                <a href="#" class="btn-primary">Book for $130</a>
-                <div class="room-icons pt-4 mt-4">
-                  <img
-                    src="assets/images/swim-pool.svg"
-                    alt=""
-                    class="img-wrap icon-box"
-                  />
-                  <img
-                    src="assets/images/yacht.svg"
-                    alt=""
-                    class="img-wrap icon-box"
-                  />
-                  <img
-                    src="assets/images/no-smoking.svg"
-                    alt=""
-                    class="img-wrap icon-box"
-                  />
-                  <img
-                    src="assets/images/drink.svg"
-                    alt=""
-                    class="img-wrap icon-box"
-                  />
-                  <a href="#">FULL INFO</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col col-md-6 mt-4 px-1em">
-            <div class="room-box">
-              <img src="assets/images/suite-4.jpg" alt="" class="img-wrap" />
-              <p class="tl-p">Suite Diana</p>
-              <div class="stars-p">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-alt"></i>
-              </div>
-              <div class="room-box-in">
-                <h5 class="mt-1">Big Room</h5>
-                <p class="mt-3 header-des">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Fugiat fuga dignissimos tempora id neque autem!
-                </p>
-                <a href="#" class="btn-primary">Book for $130</a>
-                <div class="room-icons pt-4 mt-4">
-                  <img
-                    src="assets/images/swim-pool.svg"
-                    alt=""
-                    class="img-wrap icon-box"
-                  />
-                  <img
-                    src="assets/images/yacht.svg"
-                    alt=""
-                    class="img-wrap icon-box"
-                  />
-                  <img
-                    src="assets/images/no-smoking.svg"
-                    alt=""
-                    class="img-wrap icon-box"
-                  />
-                  <img
-                    src="assets/images/drink.svg"
-                    alt=""
-                    class="img-wrap icon-box"
-                  />
-                  <a href="#">FULL INFO</a>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
-    <section id="reviews">
-      <div class="container my-auto">
-        <div class="row d-flex justify-center">
-          <div class="col col-md-8 mx-auto">
-            <h4 class="qoute text-center">
-              "I still enjoy traveling a lot. I mean, it amazes me that I still
-              get excited in hotel rooms just to see what kind of shampoo
-              they've left me."
-            </h4>
-            <h6>JASON BELT</h6>
-            <div class="text-center mt-4">
-              <div class="span active pointer"></div>
-              <div class="span pointer"></div>
-              <div class="span pointer"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="video">
-      <div class="container my-auto">
-        <div class="row d-flex justify-center">
-          <div class="col text-center mx-auto">
-            <h5>A New Dimension Of Luxury.</h5>
-            <p class="mt-3 mb-3">our presentation, 0:48 min</p>
-            <a href="#" class="video-btn"> <i class="fa fa-play"></i></a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="dining">
-      <div class="container padding-top-bottom">
-        <div class="row d-flex justify-center">
-          <div
-            class="col col-md-8 mx-auto px-1em align-self-center text-center"
-          >
-            <p class="header">EXCELLENT RESTAURANT</p>
-            <h3 class="h3-padding-bot">Dining & Bars</h3>
-          </div>
-          <div class="col bg-white d-flex">
-            <div class="col col-xl-6 mt-xl-0 mt-4 order-xl-1"
-            data-aos="fade-right">
-              <img src="assets/images/beach-res.jpg" alt="" class="img-wrap" />
-            </div>
-            <div
-              class="col col-xl-6 text-center align-self-center mt-4 order-xl-2 bg-white"
-            >
-              <div class="row d-flex justify-center">
-                <div class="col-sm-10 col-xl-8 text-center">
-                  <h5>Beach Restaurant</h5>
-                  <p class="mt-4 px-1em header-des">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Nesciunt magni eveniet, in nulla nobis modi.
-                  </p>
-                  <div class="mt-5 mb-4 mb-xl-0">
-                    <a href="#" class="btn-primary">Explore</a>
-                  </div>
+    <section id="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col col-12 col-md-6 pl-md-30" data-aos="zoom-in-right">
+                    <img src="assets/img/about-img.png" alt="" class="img">
                 </div>
-              </div>
-            </div>
-            <div class="col col-xl-6 mt-xl-0 mt-4 order-xl-4"
-            data-aos="fade-left">
-              <img src="assets/images/pool-res.jpg" alt="" class="img-wrap" />
-            </div>
-            <div
-              class="col col-xl-6 text-center align-self-center mt-4 order-xl-3 bg-white"
-            >
-              <div class="row d-flex justify-center">
-                <div class="col-sm-10 col-xl-8 text-center">
-                  <h5>Pool Restaurant</h5>
-                  <p class="mt-4 px-1em header-des">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Nesciunt magni eveniet, in nulla nobis modi.
-                  </p>
-                  <div class="mt-5 mb-4 mb-xl-0">
-                    <a href="#" class="btn-primary">Explore</a>
-                  </div>
+                <div class="col col-12 col-md-6 d-flex justify-center col-wrap" data-aos="fade-left">
+                    <h5 class="heading-5 mb-26">About Us</h5>
+                    <h2 class="heading-2">On Pace for greatness</h2>
+                    <h6>Started from that first potato harvest to becoming the biggest local food provider.</h6>
+                    <p>We're a new business aiming to offer cheap food options for those who want to eat fast without
+                        having to spend too much money. We'll keep our prices low with competitive rates.</p>
+                    <a href="#" class="btn btn-outline">ABOUT US</a>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
+    </section>
+    <section id="about-us-2">
+        <div class="container">
+            <div class="row">
+                <div class="col col-12 col-md-3 d-flex align-center col-wrap text-center" data-aos="zoom-in">
+                    <h2 class="heading-2">2020</h2>
+                    <h5 class="heading-5">Created</h5>
+                    <p>
+                        With 2 founders and 10 local luzon farmers
+                    </p>
+                </div>
+                <div class="col col-12 col-md-3 d-flex align-center col-wrap text-center" data-aos="zoom-in">
+                    <h2 class="heading-2">45+</h2>
+                    <h5 class="heading-5">Employes</h5>
+                    <p>
+                        With more employment opportunities to come
+                    </p>
+                </div>
+                <div class="col col-12 col-md-3 d-flex align-center col-wrap text-center" data-aos="zoom-in">
+                    <h2 class="heading-2">10+</h2>
+                    <h5 class="heading-5">Orders</h5>
+                    <p>
+                        Daily and growing
+                    </p>
+                </div>
+                <div class="col col-12 col-md-3 d-flex align-center col-wrap text-center" data-aos="zoom-in">
+                    <h2 class="heading-2">89</h2>
+                    <h5 class="heading-5">Products</h5>
+                    <p>
+                        Gaining velocity, the palpitation of night
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="favorite">
+        <div class="container">
+            <div class="row mb-44">
+                <div class="col col-12 d-center d-flex col-wrap">
+                    <h5 class="heading-5">Our Menu</h5>
+                    <h2 class="heading-2">Favorite Food</h2>
+                    <p class="text-center">
+                        The limitless favorites choosen by our Customers.
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-center mb-44">
+                <div class="col col-xl-12">
+                    <div class="row">
+                        <div class="carousel fav-carousel">
+                            <div class="fav-box">
+                                <div class="fav-col d-flex col-wrap" data-aos="zoom-in-up">
+                                    <div class="img-fav">
+                                        <img src="assets/img/favorite-1.jpeg" alt="" class="img">
+                                    </div>
+                                    <h4 class="heading-4">Italian Style Carbonara</h4>
+                                    <div class="star-col">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <h4 class="heading-4 h4-price">$5</h4>
+                                </div>
+                            </div>
+                            <div class="fav-box">
+                                <div class="fav-col d-flex col-wrap" data-aos="zoom-in-up">
+                                    <div class="img-fav">
+                                        <img src="assets/img/favorite-2.jpeg" alt="" class="img">
+                                    </div>
+                                    <h4 class="heading-4">Egg Roll Maki</h4>
+                                    <div class="star-col">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <h4 class="heading-4 h4-price">$3</h4>
+                                </div>
+                            </div>
+                            <div class="fav-box">
+                                <div class="fav-col d-flex col-wrap" data-aos="zoom-in-up">
+                                    <div class="img-fav">
+                                        <img src="assets/img/favorite-3.jpeg" alt="" class="img">
+                                    </div>
+                                    <h4 class="heading-4">Strawberry Donut Milk Special</h4>
+                                    <div class="star-col">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <h4 class="heading-4 h4-price">$1</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="explore">
+        <div class="container">
+            <div class="row mb-64">
+                <div class="col col-12 text-center">
+                    <h6>Explore by category</h6>
+                </div>
+            </div>
+            <div class="row justify-center">
+                <div class="col col-md-9">
+                    <div class="row mb-0">
+                        <div class="col col-6 col-md-3">
+                            <div class="explore-col d-flex d-center col-wrap aos-init aos-animate" data-aos="fade-up">
+                                <img src="assets/img/explore-1.png" alt="" class="explore-img">
+                                <h6 class="heading-6 mb-44"><a href="#" class="link">Fruits</a></h6>
+                            </div>
+                        </div>
+                        <div class="col col-6 col-md-3">
+                            <div class="explore-col d-flex d-center col-wrap aos-init aos-animate" data-aos="fade-up">
+                                <img src="assets/img/explore-2.png" alt="" class="explore-img">
+                                <h6 class="heading-6 mb-44"><a href="#" class="link">Dinner</a></h6>
+                            </div>
+                        </div>
+                        <div class="col col-6 col-md-3">
+                            <div class="explore-col d-flex d-center col-wrap aos-init aos-animate" data-aos="fade-up">
+                                <img src="assets/img/explore-3.png" alt="" class="explore-img">
+                                <h6 class="heading-6 mb-44"><a href="#" class="link">Bakery</a></h6>
+                            </div>
+                        </div>
+                        <div class="col col-6 col-md-3">
+                            <div class="explore-col d-flex d-center col-wrap aos-init aos-animate" data-aos="fade-up">
+                                <img src="assets/img/explore-4.png" alt="" class="explore-img">
+                                <h6 class="heading-6 mb-44"><a href="#" class="link">Drinks</a></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col col-12 col-md-6 d-flex justify-center col-wrap pl-md-30" data-aos="fade-right">
+                    <h5 class="heading-5 mb-26">Gallery</h5>
+                    <h2 class="heading-2">Food Gallery</h2>
+                    <h6>French Blue Cheese</h6>
+                    <p>Made with cultures of the mold Penicillium, giving it spots or veins of the mold throughout the
+                        cheese.</p>
+                    <div class="slider d-flex align-center">
+                        <i class="fas fa-chevron-left mr-16"></i>
+                        <h4 class="heading-4 mr-16">1/5</h4>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="col col-12 col-md-6 " data-aos="zoom-in-left">
+                    <img src="assets/img/gallery-1.png" alt="" class="img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col col-12 d-flex d-center col-wrap">
+                    <h5 class="heading-5">Clients Say</h5>
+                    <h2 class="heading-2">Testimonials</h2>
+                    <p class="text-center">
+                        What our critics have to say with our Food Market.
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-center mb-44">
+                <div class="col col-xl-10">
+                    <div class="row">
+                        <div class="carousel test-carousel">
+                            <div class="person-box">
+                                <div class="person-col d-flex space-between col-wrap" data-aos="zoom-in">
+                                    <img src="assets/img/colon.png" alt="" class="colon-img">
+                                    <p class="test-p">
+                                        A masterpiece of food collection. Haachama's favorite was the tarantula flavored
+                                        ramen. Recommended on Haachama Sundays!
+                                    </p>
+                                    <div class="rating">
+                                        <div class="star-col">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <p class="person-p">
+                                            Haachama
+                                        </p>
+                                    </div>
+                                    <img src="assets/img/person-1.png" alt="" class="person-img">
+                                </div>
+                            </div>
+
+                            <div class="person-box">
+                                <div class="person-col d-flex space-between col-wrap" data-aos="zoom-in">
+                                    <img src="assets/img/colon.png" alt="" class="colon-img">
+                                    <p class="test-p">
+                                        Fox loves all cheesy drinks from this gallery. If only friends were able to
+                                        visit
+                                        this.
+                                    </p>
+                                    <div class="rating">
+                                        <div class="star-col">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <p class="person-p">
+                                            Shirokami Fubuki
+                                        </p>
+                                    </div>
+                                    <img src="assets/img/person-2.png" alt="" class="person-img">
+                                </div>
+                            </div>
+                            <div class="person-box">
+                                <div class="person-col d-flex space-between col-wrap" data-aos="zoom-in">
+                                    <img src="assets/img/colon.png" alt="" class="colon-img">
+                                    <p class="test-p">
+                                        I LOVE MY PUDDING. AME-CHAN GIVE ME BACK MY PUDDING :)
+                                    </p>
+                                    <div class="rating">
+                                        <div class="star-col">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <p class="person-p">
+                                            Aoi Nabi
+                                        </p>
+                                    </div>
+                                    <img src="assets/img/person-3.png" alt="" class="person-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="app">
+        <div class="container">
+            <div class="row">
+                <div class="col col-12 col-md-6 d-flex justify-center col-wrap order-md-2 mb-44" data-aos="fade-up">
+                    <h5 class="heading-5 mb-26">Application</h5>
+                    <h2 class="heading-2">Download Our App</h2>
+                    <h6>The sky was cloudless and of a deep</h6>
+                    <p>The sky was cloudless and of a deep dark blue. The spectacle before us was indeed sublime.</p>
+                    <div class="app-btn">
+                        <a href="#" class="btn btn-outline">APP STORE</a>
+                        <a href="#" class="btn btn-outline">GOOGLE PLAY</a>
+                    </div>
+                </div>
+                <div class="col col-12 col-md-6 order-md-1 pl-md-30">
+                    <img src="assets/img/app-1.png" alt="" class="img" data-aos="zoom-in">
+                    <img src="assets/img/iphone.svg" alt="" class="img img-phone" data-aos="zoom-in-up"
+                        data-aos-delay="500">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="articles">
+        <div class="container">
+            <div class="row mb-44">
+                <div class="col col-12 d-flex d-center col-wrap">
+                    <h5 class="heading-5">Our Blog</h5>
+                    <h2 class="heading-2">Articles</h2>
+                    <p class="text-center">
+                        Featured by local and internation food media around the world.
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-center mb-44">
+                <div class="col col-xl-12">
+                    <div class="row justify-center">
+                        <div class="carousel art-carousel">
+                            <div class="art-box">
+                                <div class="art-col" data-aos="fade-left">
+                                    <div class="img-art">
+                                        <img src="assets/img/art-1.jpeg" alt="" class="img">
+                                        <div class="video-btn d-hidden">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </div>
+
+                                    <h4 class="heading-4">Top Japanese Restaurants</h4>
+                                </div>
+                            </div>
+                            <div class="art-box">
+                                <div class="art-col" data-aos="fade-left">
+                                    <div class="img-art">
+                                        <img src="assets/img/art-2.jpeg" alt="" class="img">
+                                        <div class="video-btn d-hidden">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </div>
+
+                                    <h4 class="heading-4">Cheesecakes to die for!</h4>
+                                </div>
+                            </div>
+                            <div class="art-box">
+                                <div class="art-col" data-aos="fade-left">
+                                    <div class="img-art">
+                                        <img src="assets/img/art-3.jpeg" alt="" class="img">
+                                        <div class="video-btn d-hidden">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </div>
+
+                                    <h4 class="heading-4">Natural Coffee the new trend of 2021?</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="map">
+        <div class="container">
+            <div class="row">
+                <div class="col col-12 col-md-6 d-flex justify-center col-wrap mb-26 pl-md-30">
+                    <h5 class="heading-5 mb-26">We On Map</h5>
+                    <h2 class="heading-2">Find Our Market</h2>
+                    <p>Open Every Day except Philippines Holidays. </p>
+                    <p class="work">Working Hours</p>
+                    <h4 class="heading-4">9:00 am. - 8:00 pm.</h4>
+                </div>
+                <div class="col col-12 col-md-6 d-flex justify-center">
+                    <img src="https://api.mapbox.com/styles/v1/unsiga25/ckor0gczt3du817p6q8gb6hf5/static/url-https%3A%2F%2Fi.imgur.com%2F3sxqYn5.png(-73.7638,42.6564)/-73.7638,42.6564,13,0/600x300@2x?access_token=pk.eyJ1IjoidW5zaWdhMjUiLCJhIjoiY2tvcjBkanVxMTAxMDJzcGN3N3pkeTdkdiJ9.YkXJv6TNKV4L_Ebc163L1g"
+                        alt="Mapbox Map of -73.7638,42.6564" class="img-map img">
+                </div>
+            </div>
+        </div>
     </section>
     <section id="contact">
-      <div class="container padding-top">
-        <div class="row d-flex justify-center">
-          <div
-            class="col col-md-8 mx-auto px-1em align-self-center text-center"
-          >
-            <p class="header">GET IN TOUCH</p>
-            <h3 class="h3-padding-bot">Drop us a line</h3>
-          </div>
+        <div class="container">
+            <div class="row justify-center">
+                <div class="col col-xl-10">
+                    <div class="row">
+                        <div class="contact-col col col-12 d-flex justify-center">
+                            <div class="order-text">
+                                <h2 class="heading-2">Order Now</h2>
+                                <p>Get the freshest goods today!</p>
+                            </div>
+                            <a href="" class="btn btn-primary">CONTACT US</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row d-flex justify-center">
-          <div class="col col-md-6 col-lg-4 px-1em">
-            <div class="line-cell d-flex">
-              <p class="text-left p-title">Address:</p>
-              <p class="text-right header-des">Avenue Str. 328</p>
-            </div>
-            <div class="line-cell d-flex">
-              <p class="text-left p-title">City:</p>
-              <p class="text-right header-des">Thessaloniki</p>
-            </div>
-            <div class="line-cell d-flex">
-              <p class="text-left p-title">Check-In:</p>
-              <p class="text-right header-des">14:00 pm</p>
-            </div>
-          </div>
-          <div class="col col-md-6 col-lg-4 px-1em">
-            <div class="line-cell d-flex">
-              <p class="text-left p-title">Phone:</p>
-              <p class="text-right header-des">+21 60 374 7537</p>
-            </div>
-            <div class="line-cell d-flex">
-              <p class="text-left p-title">Email:</p>
-              <p class="text-right header-des">info@hotel.com</p>
-            </div>
-            <div class="line-cell d-flex">
-              <p class="text-left p-title">Check-Out:</p>
-              <p class="text-right header-des">11:00 am</p>
-            </div>
-          </div>
-          <div
-            class="col col-md-8 mx-auto mt-5 px-1em align-self-center text-center"
-          >
-            <p class="mb-0 header-des">available at: 8am - 10pm</p>
-            <h3 class="h2 header-des">+21 60 374 7537</h3>
-          </div>
-        </div>
-        <div class="row d-flex justify-center py-0">
-          <div class="col col-md-8 mt-4 subscribe">
-            <input type="text" name="" placeholder="your text here" id="" />
-            <button class="pointer">subscribe</button>
-          </div>
-        </div>
-      </div>
     </section>
-    <section id="caro-rooms">
-      <div class="container-fluid">
-        <div class="row d-flex justify-center py-0">
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-black d-block">
-            <div class="overlay">
-              <img src="assets/images/car-room-1.jpg" alt="" class="img-wrap" />
+    <footer id="footer">
+        <div class="container">
+            <div class="row mb-44">
+                <div class="col col-12 col-md-3 d-flex col-wrap mb-26">
+                    <h1>FOODUGAN</h1>
+                    <div class="social-link">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col col-6 col-md-3 d-flex col-wrap">
+                    <h5 class="heading-5 mb-26">Menu</h5>
+                    <ul>
+                        <li><a href="#about-us">About</a></li>
+                        <li><a href="#favorite">Menu</a></li>
+                        <li><a href="#testimonials">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col col-6 col-md-3 d-flex col-wrap">
+                    <h5 class="heading-5 mb-26">Features</h5>
+                    <ul>
+                        <li><a href="#features">Fresh Food</a></li>
+                        <li><a href="#features">Restaurant</a></li>
+                        <li><a href="#features">Delivery</a></li>
+                    </ul>
+                </div>
+                <div class="col col-12 col-md-3 d-flex col-wrap">
+                    <h5 class="heading-5 mb-26">Newsletter</h5>
+                    <input type="email" name="newsletter" id="" placeholder="Your Email">
+                    <a href="" class="btn btn-primary">SUBCRIBE</a>
+                </div>
             </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-black d-block">
-            <div class="overlay">
-              <img src="assets/images/car-room-2.jpg" alt="" class="img-wrap" />
+            <div class="row justify-center">
+                <div class="border col col-12">
+                    <div class="row space-between align-center">
+                        <div class="end-col col col-12 col-md-6 d-flex justify-center">
+                            <p class="text-center">Copyright © 2020 Laaqiq.
+                                All Rights Reserved.</p>
+                        </div>
+                        <div class="end-col-2 col col-12 col-md-6 d-flex space-between">
+                            <a class="terms-a" href="#">Terms of Use</a>
+                            <a class="terms-a" href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-black sm-block">
-            <div class="overlay">
-              <img src="assets/images/car-room-3.jpg" alt="" class="img-wrap" />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-black md-block">
-            <div class="overlay">
-              <img src="assets/images/car-room-4.jpg" alt="" class="img-wrap" />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-black lg-block">
-            <div class="overlay">
-              <img src="assets/images/car-room-5.jpg" alt="" class="img-wrap" />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 hover-black lg-block">
-            <div class="overlay">
-              <img src="assets/images/car-room-6.jpg" alt="" class="img-wrap" />
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <section id="site-map">
-      <div class="container padding-top-bottom">
-        <div class="row d-flex justify-center">
-          <div class="col col-md-3 text-center text-md-left">
-            <img src="assets/images/logo.png" alt="" class="logo" />
-            <p class="mt-4">
-              Avenue Street 3284<br />
-              Thessaloniki
-            </p>
-          </div>
-          <div class="col col-md-4 mt-4 mt-md-0 text-center text-md-left">
-            <h6 class="mb-3">INFORMATION</h6>
-            <a href="#">terms and conditions</a>
-            <a href="#">services</a>
-            <a href="#">restaurant</a>
-            <a href="#">testimonials</a>
-            <a href="#">gallery & images</a>
-          </div>
-          <div class="col col-md-5 mt-4 mt-md-0 text-center text-md-left">
-            <h6 class="mb-3">ABOUT US</h6>
-            <p class="mb-4">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae
-              iusto ex qui aut nam nobis vel. Recusandae unde deserunt error.
-            </p>
-            <img
-              class="sample-logo"
-              src="assets/images/sample-web-1.png"
-              alt=""
-            />
-            <img
-              class="sample-logo"
-              src="assets/images/sample-web-2.png"
-              alt=""
-            />
-            <img
-              class="sample-logo"
-              src="assets/images/sample-web-3.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="container">
-        <div class="row d-flex items-center text-center">
-          <div class="col col-md-6 text-md-left">
-            <p class="mb-0">2019 © Thalia. All rights reserved.</p>
-          </div>
-          <div class="col col-md-6 my-2 my-md-0 text-md-right">
-            <a href="#">facebook</a>
-            <a href="#">twitter</a>
-            <a href="#">instagram</a>
-          </div>
-        </div>
-      </div>
     </footer>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  </body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
 </html>
